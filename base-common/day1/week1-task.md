@@ -8,7 +8,7 @@
 		3. windows上git的操作
 		4. 相关IDE使用git
 	+ 相关博客：
-		1.window下设置ssh github根证书 https://www.cnblogs.com/hukai46/p/5489631.html
+		1. [window下设置ssh github根证书](https://www.cnblogs.com/hukai46/p/5489631.html).
 
 ## 第一天任务
 	1. 学习学技术博客
