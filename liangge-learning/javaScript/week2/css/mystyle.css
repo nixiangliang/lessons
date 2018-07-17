@@ -1,0 +1,53 @@
+.g-footer,
+.g-header {
+    position: relative;
+}
+.g-body{
+    background-color: #FFC1C1;
+}
+
+
+.g-content {
+    background:
+            linear-gradient(135deg, deeppink 25%, transparent 25%) -50px 0,
+            linear-gradient(225deg, deeppink 25%, transparent 25%) -50px 0,
+            linear-gradient(315deg, deeppink 25%, transparent 25%),
+            linear-gradient(45deg, deeppink 25%, transparent 25%);
+}
+.g-content::before {
+    content: '';
+}
+
+.body{
+    background-size:1500px auto;
+    padding:200px;
+    margin:180px;
+}
+.section{
+    text-align:center;
+}
+
+.backgroud-image{
+
+}
+.g-login-style{
+
+}
+
+.i-backgroud-image {
+
+}
+
+.center {
+    text-align: center; /*让div内部文字居中*/
+    background-color: #fff;
+    border-radius: 20px;
+    width: 450px;
+    height: 350px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

@@ -2,9 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
+    <title>Title</title>
+    <style>
+        #div1 .active{background: yellow;}
+        #div1 div{width: 200px;
+        height: 100px;
+        background: #cccccc;
+        border: 1px solid black;
+        display: none;
+        }
+    </style>
+    <script>
+        window.onload=function()
+        {
+            var oDiv=document.getElementById('div1');
+            var aBtn=oDiv.getElementsByTagName('input');
+            var aDiv=oDiv.getElementsByTagName('div');
+            for(var i=0;i<aBtn.length;i++)
+            {   aBtn[i].index=i;
+                aBtn[i].onclick=function ()
+                {
+                    for(var i=0;i<aBtn.length;i++)
+                    {
+                        aBtn[i].className='';
+                        aDiv[i].style.display='none';
+                    }
+                    this.className='active';
+                    aDiv[this.index].style.display='block';
+                };
+            }
+        };
+    </script>
 <body>
-$END$
+    <div id="div1">
+        <input class="active" type="button" value="教育">
+        <input type="button" value="培训">
+        <input type="button" value="招生">
+        <input type="button" value="出国">
+        <div style="display: block;">1111</div>
+        <div>2222</div>
+        <div>3333</div>
+        <div>4444</div>
+    </div>
 </body>
 </html>

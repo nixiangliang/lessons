@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <script>
+    window.onload=function(){
+        var oDiv=document.getElementById('ui1')
+        var oQwe=document.getElementById('ui2')
+        var oRty=document.getElementById('ui3')
+        var uIop=document.getElementById('div1')
+        var zXcv=uIop.getElementsByTagName('input')
+        oDiv.onclick=function () {
+           for(var a=0;a<zXcv.length;a++)
+               zXcv[a].checked=true;
+        }
+        oQwe.onclick=function () {
+            for(var a=0;a<zXcv.length;a++)
+                zXcv[a].checked=false;
+        }
+        oRty.onclick=function () {
+            for(var a=0;a<zXcv.length;a++) {
+                if (zXcv[a].checked == false) {
+                    zXcv[a].checked = true;
+                }
+                else {
+                    zXcv[a].checked = false;
+                }
+            }
+        }
+    }
+
+    </script>
+
 </head>
 <body>
-$END$
+    <input id="ui1" type="button" value="全选" >
+    <input id="ui2" type="button" value="不选" >
+    <input id="ui3" type="button" value="反选" >
+<div id="div1">
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+</div>
 </body>
 </html>
