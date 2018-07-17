@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <style>
+      #div1{width:200px;
+          height:200px;
+          background:red;
+      }
+   </style>
+    <script>
+        function tored() {
+            var q=document.getElementById('div1')
+            q.style.width='400px'
+            q.style.height='400px'
+            q.style.background='green'
+        }
+        function togreen() {
+            var q=document.getElementById('div1')
+            q.style.width='200px'
+            q.style.height='200px'
+            q.style.background='red'
+        }
+    </script>
+</head>
+<body>
+<div id="div1" onmouseover="tored()" onmouseout="togreen()">
+</div>
+
+</body>
+</html>
+
